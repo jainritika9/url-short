@@ -11,14 +11,13 @@ function App() {
           <Item.Image src={img} />
           <Item.Content>
            
-          <Menu inverted pointing secondary style={{paddingTop:10}}>
+          <Menu inverted  secondary style={{paddingTop:10}}>
           <Container>
-                <Menu.Item as='a' active>
-                  Home
+                <Menu.Item as='a' position='right' active>
+                  <Icon name='home'/>
                 </Menu.Item>
                 <Menu.Item as='a'>About</Menu.Item>
-                <Menu.Item as='a'>Contact</Menu.Item>
-                <Menu.Item position='right'>
+                 <Menu.Item >
                   <Button as='a'  inverted>
                     Log in
                   </Button>
@@ -32,20 +31,20 @@ function App() {
           </Item.Content>
     </Item>
     <Segment attached='bottom' attached='top' stackable style={{backgroundColor:'teal',textAlign:'center',fontSize:45,color:'white'}}>
-      <p style={{marginBottom:2}}>Shorten Your Long URL's</p><hr style={{width:350 ,borderWidth:3,color:'white'}}/>
+      <p style={{marginBottom:2}}>Shorten Your Long URL's</p><hr style={{width:300 ,borderWidth:3,color:'white'}}/>
       <Form>
       <Input type='text' placeholder='Enter Your Long URl.. ' style={{fontSize:20}} fluid action><input/><Button color='green' style={{fontSize:20}}>Shorten</Button></Input>
       </Form>
     </Segment>
     <Segment attached='bottom' stackable style={{textAlign:'center',fontSize:45}}>
-    <p style={{marginBottom:2}}>How It Works</p><hr style={{width:350 ,borderWidth:3}}/>
+    <p style={{marginBottom:2}}>How It Works</p><hr style={{width:300 ,borderWidth:3}}/>
     <Grid stackable>
     <Grid.Row columns={2}>
         <Grid.Column width={5}>
           <Divider horizontal/>
            <Image src={img2}  />
         </Grid.Column>
-        <Grid.Column width={10}>
+        <Grid.Column width={10} style={{paddingRight:5}}>
             <Divider horizontal>
       <Header as='h2'>
         <Icon name='magic' />
@@ -54,7 +53,7 @@ function App() {
       <p style={{fontSize:26,color:'grey'}}>Transforms Lengthy URLs Into Short URLs</p>
       <p style={{fontSize:17,color:'cadetblue'}}><u>https://techcrunch.com/2017/10/24/youll-be-able-to-get-the-iphone-x-at-an-apple-store-on-launch-day-if-you-get-there-early/</u></p>
       <p style={{fontSize:24}}><Icon name='arrow down'/></p>
-      <p style={{fontSize:17,color:'cadetblue'}}><u>https://techify.com/YourKeyword</u></p>
+      <p style={{fontSize:17,color:'cadetblue'}}><u>https://techify.in/YourKeyword</u></p>
         </Grid.Column>
         
       </Grid.Row>
